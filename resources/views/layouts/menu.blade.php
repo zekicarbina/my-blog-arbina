@@ -11,6 +11,12 @@
     </a>
 </li>
 <li class="nav-item">
+    <a href="{{ route('createPost') }}" class="nav-link {{ Request::is('createPost') ? 'active' : '' }}">
+        <i class="nav-icon fas fa-solid fa-user"></i>
+        <p>Create Post</p>
+    </a>
+</li>
+<li class="nav-item">
     <a href="{{ route('myProfile') }}" class="nav-link {{ Request::is('myProfile') ? 'active' : '' }}">
         <i class="nav-icon fas fa-solid fa-user"></i>
         <p>Profile</p>

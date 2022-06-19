@@ -22,6 +22,7 @@ return new class extends Migration
             $table->rememberToken();
             $table->timestamps();
             $table->boolean('admin')->default('0');
+            $table->timestamp('updated_at')->nullable();
         });
     }
 
